@@ -1,0 +1,64 @@
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav_logo {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2%;
+}
+
+.futbol-logo {
+  height: 30px;
+  background-color: white;
+}
+
+
+.nav_menu {
+  padding: 0;
+  margin: 0;
+}
+
+.nav_title {
+  display: inline-block;
+  float: left;
+  position: relative;
+  padding: 23px 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: white;
+}
+
+.om-logo {
+  background-color: white;
+  height: 50px;
+}
+
+.nav_title .sous_menu {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  height: 0; //pour qu'il soit invisible
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: transform 0.5s;
+  border: solid 1px white;
+  margin-right: 10px;
+}
+
+.nav_title:hover .sous_menu {
+  visibility: visible;
+  height: auto;
+  transform: scaleY(1);
+}
+
+.nav_title .sous_menu li {
+  // padding: 0;
+  display: inline-block;
+  float: left;
+}
