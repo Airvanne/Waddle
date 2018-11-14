@@ -2,21 +2,28 @@
   <div class="nav_logo">
     <%= image_tag("futbol-solid.svg", alt: "Logo foot", class: "futbol-logo") %>
   </div>
-  <div class="nav_avatar">
+  <div class="nav_right">
     <ul class="nav_menu">
       <li class="nav_title"> <%= image_tag("om.png", alt: "Logo OM", class: "om-logo") %>
         <ul class="sous_menu">
-          <li class="sous_title">Home</li>
-          <li class="sous_title">Results</li>
-          <li class="sous_title">Team</li>
+          <li class="sous_title"><a href="">Log in</a></li>
+          <li class="sous_title"><a href="">History</a></li>
+          <li class="sous_title"><a href="">Store</a></li>
         </ul>
       </li>
     </ul>
   </div>
 </nav>
 
+<div class="tabs">
+  <button class="tab">Home</button>
+  <button class="tab">Results</button>
+  <button class="tab">Team</button>
+</div>
+
+
 <div class="card">
-    <%= image_tag("waddle.jpg", alt: "Meilleur joueur du munde", title: "Chris Waddle", class: "avatar") %>
+    <a href="https://www.youtube.com/watch?v=GAts1KXMzKA"><%= image_tag("waddle.jpg", alt: "Meilleur joueur du monde", title: "Chris Waddle", class: "avatar") %></a>
     <h1>Chris Waddle</h1>
     <p>Attacking midfielder</p>
     <p>140 matches - 27 goals</p>

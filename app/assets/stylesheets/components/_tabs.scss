@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+}
+.tab {
+  width: 100%;
+  border: none;
+  padding: 1em;
+  background-color: #1a1a1a;
+  color: #d7d4d4;
+}
+
+.tab:hover {
+  background-color: #d7d4d4;
+  color: #1a1a1a;
+}
+
+.tab:active {
+  background-color: gold;
+}

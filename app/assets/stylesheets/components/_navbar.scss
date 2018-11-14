@@ -46,13 +46,14 @@ nav {
   height: 0; //pour qu'il soit invisible
   transform: scaleY(0);
   transform-origin: 50% 0;
-  transition: transform 0.5s;
-  border: solid 1px white;
+  transition: transform 0.8s;
+  padding: 3px;
   margin-right: 10px;
 }
 
 .nav_title:hover .sous_menu {
   visibility: visible;
+  margin-top: 23px;
   height: auto;
   transform: scaleY(1);
 }
@@ -61,4 +62,13 @@ nav {
   // padding: 0;
   display: inline-block;
   float: left;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.om-logo {
+  border-radius: 100px;
 }
